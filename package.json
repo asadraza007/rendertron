@@ -11,8 +11,8 @@
   "types": "build/rendertron.d.ts",
   "bin": "bin/rendertron",
   "scripts": {
-    "build": "tsc --output public",
-    "prepack": "npm run build",
+    "build": "tsc",
+    "prepack": "npm run build --output public",
     "start": "node build/rendertron.js",
     "format": "npm run format:eslint && npm run format:prettier",
     "format:eslint": "npm run lint -- --fix",
